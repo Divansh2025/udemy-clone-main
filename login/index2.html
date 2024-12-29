@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coursify - Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="login-card">
+        <div class="logo">
+          <h1>Coursify</h1>
+        </div>
+        <h2>Welcome Back!</h2>
+        <p>Log in to access your account and start learning.</p>
+        <form id="loginForm" onsubmit="handleLogin(event)">
+          <div class="input-group">
+            <label for="username">Username or Email</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Enter your username or email"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+          <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
+          </div>
+        </form>
+        <div class="signup">
+          <p>New to Coursify? <a href="#">Sign up now</a></p>
+        </div>
+      </div>
+      <footer>
+        <p>© 2024 Coursify. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script>
+      function handleLogin(event) {
+        event.preventDefault();
+        window.location.href = "http://localhost:3000/";
+      }
+    </script>
+  </body>
+</html>
